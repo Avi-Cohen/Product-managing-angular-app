@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { StarComponent } from './shared/star.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { StarComponent } from './shared/star.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
